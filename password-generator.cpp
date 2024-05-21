@@ -29,5 +29,12 @@ int main(int argc, char *argv[]) {
         std::cout << randomChar;
     }
     std::cout << std::endl;
+
+    // Consume the newline character left in the input buffer
+    std::cin.ignore();
+
+    // Pause the program
+    std::cout << "Press Enter to exit...";
+    std::cin.get();
     return 0;
 }
